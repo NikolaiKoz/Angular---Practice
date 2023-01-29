@@ -32,5 +32,13 @@ export class EmpleadoComponent {
 
   llamaEmpresa(value: String){}
 
+  habilitacionCuadro: boolean = false;
+
+  userRegistrado: boolean = false;
+
+  getRegistroUsuario(){
+    this.userRegistrado = false;
+  }
+
 
 }
