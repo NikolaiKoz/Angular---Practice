@@ -1,7 +1,24 @@
 .empleado{
-    color: blue;
+    width: 100%;
+    font-size: 1.65em;
+    background-color: aqua;
 
-    &__otro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: 0 0 2rem 0;
+
+    &__nombre{
         color: red;
+    }
+
+    &__edad{
+        color: blueviolet;
+    }
+
+    &__empresa{
+        color: tomato;
     }
 }

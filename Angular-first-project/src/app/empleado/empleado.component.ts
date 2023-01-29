@@ -13,4 +13,21 @@ import { Component } from '@angular/core';
 
 export class EmpleadoComponent {
 
+  private nombre: string = "Jose";
+  private edad: number = 27;
+  private empresa: string = "Autonomo con un suenio";
+
+
+  getNombre(){
+    return this.nombre;
+  }
+
+  getEdad(){
+    return this.edad;
+  }
+
+  getEmpresa(){
+    return this.empresa;
+  }
+
 }
