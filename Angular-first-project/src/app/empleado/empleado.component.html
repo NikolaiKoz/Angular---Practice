@@ -9,6 +9,6 @@ Introduce la empresa <input type="text" [disabled] = "habilitacionCuadro" #empre
 
 <!-- <input type="button" value="Dale!" (click)="llamaEmpresa(empresa.value)"/> -->
 
-Registrado: <input type="checkbox" id="registro" [checked] = "userRegistrado">
+Registrado: <input type="checkbox" id="registro" [checked] = "userRegistrado" (click)="setUsuarioRegistrado()">
 
 {{getRegistroUsuario()}}

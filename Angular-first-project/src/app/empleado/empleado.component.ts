@@ -32,12 +32,16 @@ export class EmpleadoComponent {
 
   llamaEmpresa(value: String){}
 
-  habilitacionCuadro: boolean = false;
+  habilitacionCuadro: boolean = true;
 
   userRegistrado: boolean = false;
 
   getRegistroUsuario(){
     this.userRegistrado = false;
+  }
+
+  setUsuarioRegistrado(){
+    alert ("Te estan hackeandoWEYYY");
   }
 
 
