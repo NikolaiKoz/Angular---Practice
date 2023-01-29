@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-empleado',
-  // templateUrl: './empleado.component.html',
-  //styleUrls: ['./empleado.component.scss']
-  template: "<p class='empleado'>Este empleado funciona</p><span class='empleado__otro'>Si lo hace</span>",
-  styles: [".empleado__otro{color: purple;};.empleado__otro{background-color: red}"]
+  templateUrl: './empleado.component.html',
+  styleUrls: ['./empleado.component.scss']
+  // template: "<p class='empleado'>Este empleado funciona</p><span class='empleado__otro'>Si lo hace</span>",
+  // styles: [".empleado__otro{color: purple;};.empleado__otro{background-color: red}"]
 })
 
 
