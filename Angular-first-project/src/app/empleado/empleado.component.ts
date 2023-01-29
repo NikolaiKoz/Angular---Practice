@@ -15,7 +15,8 @@ export class EmpleadoComponent {
 
   private nombre: string = "Jose";
   private edad: number = 27;
-  //private empresa: string = "Autonomo con un suenio";
+  empresa: string = "Mercado Libre";
+
 
 
   getNombre(){
@@ -34,7 +35,7 @@ export class EmpleadoComponent {
 
   llamaEmpresa(value: string){}
 
-  habilitacionCuadro: boolean = true;
+  habilitacionCuadro: boolean = false;
 
   userRegistrado: boolean = false;
 
