@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Directivas con Angular';
+  mensaje: string = "";
+  registrado: boolean = false;
+
+  registrarUsuario(): void{
+    this.registrado = true;
+    this.mensaje = "Usuario Registrado con Existo rey";
+  }
 }
