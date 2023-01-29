@@ -15,7 +15,7 @@ export class EmpleadoComponent {
 
   private nombre: string = "Jose";
   private edad: number = 27;
-  private empresa: string = "Autonomo con un suenio";
+  //private empresa: string = "Autonomo con un suenio";
 
 
   getNombre(){
@@ -26,8 +26,11 @@ export class EmpleadoComponent {
     return this.edad;
   }
 
-  getEmpresa(){
-    return this.empresa;
-  }
+  // getEmpresa(){
+  //   return this.empresa;
+  // }
+
+  llamaEmpresa(value: String){}
+
 
 }

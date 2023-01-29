@@ -1,5 +1,11 @@
 <div class="empleado">
     <p class="empleado__nombre">Nombre del empleado: {{getNombre()}}</p>
-    <p class="empleado__edad">Edad del empleado {{getEdad() + 20 > 35 ? getEmpresa() : getNombre()}}</p>
-    <p class="empleado__empresa">Empresa del empleado {{getEmpresa()}}</p>
+    <p class="empleado__edad">Edad del empleado {{getEdad()}}</p>
+    <p class="empleado__empresa">Empresa del empleado: {{empresa.value}}</p>
 </div>
+
+Introduce la empresa <input type="text" #empresa (keyup)="0">
+
+
+<!-- <input type="button" value="Dale!" (click)="llamaEmpresa(empresa.value)"/> -->
+
