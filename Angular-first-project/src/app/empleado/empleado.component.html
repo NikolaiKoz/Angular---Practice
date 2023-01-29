@@ -4,11 +4,18 @@
     <p class="empleado__empresa">Empresa del empleado: {{empresa.value}}</p>
 </div>
 
-Introduce la empresa <input type="text" [disabled] = "habilitacionCuadro" #empresa (keyup)="0">
+Introduce la empresa <input type="text" [disabled] = "habilitacionCuadro" #empresa (keyup)="0"> <br>
 
 
 <!-- <input type="button" value="Dale!" (click)="llamaEmpresa(empresa.value)"/> -->
 
-Registrado: <input type="checkbox" id="registro" [checked] = "userRegistrado" (click)="setUsuarioRegistrado()">
+{{textoDeRegistro}} <br>
+
+
+
+Registrado: <input type="radio" name="nRegistro" value="si" id="registro" [checked] = "userRegistrado" (click)="setUsuarioRegistrado($event)">
+
+No Registrado: <input type="radio" name="nRegistro" value="no" (click)="setUsuarioRegistrado($event)">
+
 
 {{getRegistroUsuario()}}

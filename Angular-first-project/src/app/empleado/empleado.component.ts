@@ -30,7 +30,9 @@ export class EmpleadoComponent {
   //   return this.empresa;
   // }
 
-  llamaEmpresa(value: String){}
+  textoDeRegistro: string = "No hay nadie registrado";
+
+  llamaEmpresa(value: string){}
 
   habilitacionCuadro: boolean = true;
 
@@ -40,8 +42,21 @@ export class EmpleadoComponent {
     this.userRegistrado = false;
   }
 
-  setUsuarioRegistrado(){
-    alert ("Te estan hackeandoWEYYY");
+  setUsuarioRegistrado(event: Event){
+    // alert ("Te estan hackeandoWEYYY");
+
+  // alert(event.target)
+  // console.log(event.target)
+
+    // if((<HTMLInputElement>event.target).value == "si"){
+    //   this.textoDeRegistro = "El usuario se acaba de registrar";
+    // } else{
+    //   this.textoDeRegistro = "No hay usuarios registrados";
+    // }
+
+    (<HTMLInputElement>event.target).value == "si" ? this.textoDeRegistro = "El usuario se acaba de registrar" : this.textoDeRegistro = "No hay usuarios registrados";
+
+
   }
 
 
