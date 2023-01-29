@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styles: [".title{width: 100%;text-align: center;}"]
 })
 export class AppComponent {
-  title = 'miniCalculadoraAngular';
+  title = 'Mini Calculadora con Angular, Primera experiencia rancia';
 }

@@ -1,0 +1,22 @@
+<section class="calculadora">
+    <h2 class="calculadora__titulo">Mi primer calculadora con Angular</h2>
+    <div class="calculadora__inputs">
+        <label for="alfa">Primer elemento</label>
+        <input type="number" name="alfa" [(ngModel)]="numero1">
+    </div>
+    <div class="calculadora__inputs">
+        <label for="beta">Segundo elemento</label>
+        <input type="number" name="beta" [(ngModel)]="numer2">
+    </div>
+    <div class="carculadora__btn">
+        <input class="calculadora__btn--sumar" type="submit" value="Sumar" (click)="sumar()">
+
+        <input class="calculadora__btn--restar" type="submit" value="Restar" (click)="restar()">
+
+        <input class="calculadora__btn--multiplicar" type="submit" value="Multiplicar" (click)="multiplicar()">
+
+        <input class="calculadora__btn--dividir" type="submit" value="Dividir" (click)="dividir()">
+    </div>
+
+    <span class="calculadora__resultado">Tu resultado es: {{result}}</span>
+</section>
