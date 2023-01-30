@@ -17,6 +17,14 @@
 
     <p>Nadie registrado</p>
 
-
-
 </ng-template>
+
+
+<br>
+<br>
+<br>
+
+<ul>
+    <li *ngFor="let entrada of entradas; let i = index;"> {{entrada.titulo}} , posicion: {{i}}</li>
+</ul>
+
