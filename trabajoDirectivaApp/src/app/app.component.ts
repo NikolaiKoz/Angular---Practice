@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'Directivas con Angular';
   mensaje: string = "";
   registrado: boolean = false;
+  nombre: string = "";
+  apellido: string = "";
 
   registrarUsuario(): void{
     this.registrado = true;

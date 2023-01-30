@@ -2,13 +2,21 @@
 
 <form>
 
-    <input type="text" name="nombre" placeholder="Nombre"> <br>
+    <input type="text" name="nombre" placeholder="Nombre" [(ngModel)]="nombre"> <br>
 
-    <input type="text" name="Apellido" placeholder="Apellido"> <br>
+    <input type="text" name="Apellido" placeholder="Apellido" [(ngModel)]="apellido"> <br>
 
     <input type="submit" value="Registrar" (click)="registrarUsuario()">
 
 
 </form>
 
-<p *ngIf="registrado">{{mensaje}}</p>
+<p *ngIf="registrado; else sinRegistrar">{{mensaje}}, muchas gracias por tener tanta fe en esta App {{apellido}}, {{nombre}}. PD: No nos hacemos responsables de nada.</p>
+
+<ng-template #sinRegistrar>
+
+    <p>Nadie registrado</p>
+
+
+
+</ng-template>
